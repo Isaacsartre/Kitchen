@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bootstrap Practice</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/stylers.css">
+    <link href='https://fonts.googleapis.com/css?family=Content' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+    body {
+        font-family: 'Lato', sans-serif;
+    }
+
+    .overlay {
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgb(0,0,0);
+        background-color: #F15A29;
+        overflow-y: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 36px;
+        color: black;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+    .overlay .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
+    }
+
+    @media screen and (max-height: 450px) {
+      .overlay {overflow-y: auto;}
+      .overlay a {font-size: 20px}
+      .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+      }
+    }
+    </style>
+
+
+
+  </head>
+  <body>
+    <div class="a">
+    <img class="b" src="landing.jpg" alt="Background image">
+    <img class="center-block" src="logoBig.png" alt="burger logo image">
+    <h1 id="d">We provide The Best Food</h1>
+    <h1 id="sp">At the <strong>Right Price</strong></h1>
+    <span class="glyphicon"><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776</span>
+    <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="#">Contacts</a>
+    <a href="#">Events</a>
+    <a href="#">Menu</a>
+  </div>
+</div>
+
+
+
+
+<script>
+function openNav() {
+    document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+    document.getElementById("myNav").style.height = "0%";
+}
+</script>
+    </div>
+    <style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    height: 210px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+</style>
+</head>
+<body>
+
+
+    <div class="kl">
+      <h1 class="hap">Happy Hour</h1>
+      <h1 class="happ">Party Time</h1>
+
+      <img src="breakfast.jpg" class="kk">
+      <div class="middlekk">
+      <div class="textkk">Breakfast</div>
+      </div>
+
+      <img src="lunch.jpg" class="ka">
+      <div class="middleka">
+      <div class="textka">Lunch</div>
+      </div>
+
+      <img src="dinner.jpg" class="kb">
+      <div class="middlekb">
+      <div class="textkb">Dinner</div>
+      </div>
+      </div>
+
+    </div>
+
+
+<div class="bore">
+<img src="fastFood1.jpg">
+<img src="fastFood2.jpg">
+</div>
+
+<div class="cc">
+<div class="cda">
+<h1 class="brawl"><strong>Fast Food</strong></h1>
+<h2 class="bral">You'll love our delicious fast food</h2>
+<p class="braw">Lorem ipsum dolor sit amet, consectetur adipisic ing elit , sed do eiusmod </br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </br> Duis aute irure dolor in re prehenderit in voluptate velit esse cillum dolore eu fugiat </br> nulla pariatur.Exceteur sint occaecat cupi datat non proident</p>
+<a href="#"><button class="button"><strong>View Gallery</strong></button></a>
+</div>
+</div>
+
+<div class="rawl">
+<h1><strong>Drinks</strong></h1>
+<h2 class="ral">We also produce delicious drinks</h2>
+<p class="raw">Lorem ipsum dolor sit amet, consectetur adipisic ing elit , sed do eiusmod </br> tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, </br> quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </br> Duis aute irure dolor in re prehenderit in voluptate velit esse cillum dolore eu fugiat </br> nulla pariatur.Exceteur sint occaecat cupi datat non proident</p>
+<a href="#"><button class="button"><strong>View Gallery</strong></button></a>
+</div>
+
+<div class="bre">
+<img src="drink2.jpg" class="pull-right">
+<img src="drink1.jpg" class="pull-right">
+</div>
+
+<div class="space">
+<img src="foodsBg.jpg">
+<div class="oriental">
+<div class="container">
+
+<div class="cool">
+  <ul class="nav nav-tabs">
+    <li class="active"><a data-toggle="tab" href="#home"><strong>Fast Food</strong></a></li>
+    <li><a data-toggle="tab" href="#menu1"><strong>Drinks</strong></a></li>
+    <li><a data-toggle="tab" href="#menu2"><strong>Chicken</strong></a></li>
+    <li><a data-toggle="tab" href="#menu3"><strong>Rice</strong></a></li>
+  </ul>
+
+
+    <div class="tab-content">
+      <div id="home" class="tab-pane fade in active">
+        <div class="gallery">
+          <a target="_blank" href="img_fjords.jpg">
+            <img src="chickenBurger.jpg" alt="Trolltunga Norway">
+          </a>
+          <div class="desc"><strong>Chicken Burger</strong></div>
+        </div>
+
+        <div class="gallery">
+            <img src="beefBurger.jpg" alt="Trolltunga Norway">
+          </a>
+          <div class="desc"><strong>Beef Burger</strong></div>
+        </div>
+
+        <div class="gallery">
+            <img src="chickenPizza.jpg" alt="Trolltunga Norway">
+          </a>
+          <div class="desc"><strong>Chicken Pizza</strong></div>
+        </div>
+
+
+      </div>
+
+      <div id="menu1" class="tab-pane fade">
+        <div class="gallery">
+          <a target="_blank" href="img_fjords.jpg">
+            <img src="sun.jpg" width="280" height="250">
+          </a>
+          <div class="desc"><strong>Martini</strong></div>
+        </div>
+
+        <div class="gallery">
+            <img src="sun2.jpg" width="280" height="180">
+          </a>
+          <div class="desc"><strong>Cubano</strong></div>
+        </div>
+
+        <div class="gallery">
+            <img src="sun.jpg" width="280" height="220">
+          </a>
+          <div class="desc"><strong>Miller's Gin</strong></div>
+        </div>
+
+
+      </div>
+      <div id="menu2" class="tab-pane fade">
+        <div class="gallery">
+          <a target="_blank" href="img_fjords.jpg">
+            <img src="curr.jpg" width="280" height="220">
+          </a>
+          <div class="desc"><strong>Chicken Rice</strong></div>
+        </div>
+
+        <div class="gallery">
+            <img src="curr1.jpg" width="280" height="220">
+          </a>
+          <div class="desc"><strong>Chicken Tikka</strong></div>
+        </div>
+
+        <div class="gallery">
+            <img src="curr.jpg" width="280" height="220">
+          </a>
+          <div class="desc"><strong>Chicken Curry</strong></div>
+        </div>
+
+      </div>
+      <div id="menu3" class="tab-pane fade">
+        <div class="gallery">
+          <a target="_blank" href="img_fjords.jpg">
+            <img src="rice.jpg" width="280" height="220">
+          </a>
+          <div class="desc"><strong>Rice Chicken</strong></div>
+        </div>
+
+        <div class="gallery">
+          <img src="rice1.jpg" width="280" height="220">
+          </a>
+          <div class="desc"><strong>Rice Lamb</strong></div>
+        </div>
+
+        <div class="gallery">
+            <img src="rice2.jpg" width="280" height="220">
+          </a>
+          <div class="desc"><strong>Rice Pork</strong></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</div>
+
+<div class="creole">
+<div class="row">
+<div class="col-md-5">
+<div class="reln">
+<h4 class="boy"><strong>Our Happy Customers</strong></h4>
+<h5 class="aln">George Richard</h5>
+<p class="aln">Great food! Menu is awesome, their foods are not only great but also in the right price. I'll highly recommend them :)</p>
+<div class="mv">
+<i class="left"></i>
+<img src="p1.png">
+<img src="p2.png">
+<img src="p3.png">
+<i class="right"></i>
+</div>
+</div>
+</div>
+
+<div class="vl"></div>
+
+<div class="col-md-4">
+<div class="flt">
+<h4 class="boy"><strong>About Menu</strong></h4>
+<p class="aln">We are menu a little team of 7 members. </br> Ut wisi enim ad minim veniam, quis nos </br> trudexer ci tation ullamcorper suscipit lob </br> ortis nisl ut aliquip ex ea commodo conse </br> quat.Duisau tem vel eum iriure dolor in.</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="ward">
+<img src="subscribe.jpg">
+<h3 class="sold"><strong>Get our daily food items delivered to your email</strong></h3>
+<div class="march">
+  <form class="navbar-form navbar-left" action="/action_page.php">
+     <div class="form-group">
+       <input type="text" class="form-control" placeholder="Your email" name="Your email">
+     </div>
+     <button type="submit" class="btn btn-danger">Subscribe</button>
+   </form>
+</div>
+</div>
+
+<div class="last">
+<img class="ab" src="logo_white.png">
+<h2 class="ac"><strong>MENU</strong></h2>
+<h5 class="ad">Thats What We Are</h5>
+<span class="ae"><a href="#"><i class="fa fa-facebook" style="font-size:36px;color:black"></i></a></span>
+<span class="af"><a href="#"><i class="fa fa-twitter" style="font-size:36px;color:black"></i></a></span>
+<span class="ag"><a href="#"><i class="fa fa-pinterest-p" style="font-size:36px;color:black"></i></a></span>
+<p class="ah">2016 Menu Restaurant</p>
+</div>
+
+
+</div>
+</body>
+</html>
